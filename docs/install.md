@@ -110,6 +110,7 @@ Visit [OpenVINO System Requirments](https://docs.openvino.ai/2025/about-openvino
     export OPENARC_API_KEY="openarc-api-key" # optional — pass --use-api-key to openarc serve start to enforce
     export OPENARC_AUTOLOAD_MODEL="model_name" # model_name to load on startup
     export MODEL_PATH="/path/to/your/models" # mount your models to `/models` inside the container
+    export OPENARC_LOG_FILE="/dev/null" # optional - omit file-based logging, or log to a specific file path
     docker-compose up --build -d
     ```
 
